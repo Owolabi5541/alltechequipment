@@ -2,6 +2,7 @@ import Section from '../components/Section'
 import CaseStudyCard from '../components/CaseStudyCard'
 import { projects } from '../data/projects'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
   return (
@@ -27,12 +28,12 @@ export default function Projects() {
           and proven track record.
         </p>
            <div className="flex justify-center gap-4 mt-8">
-            <a 
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-6 py-3 rounded-2xl font-semibold bg-white text-[#003366] hover:bg-slate-200 transition"
             >
               Request a Quote
-            </a>
+            </Link>
            
           </div>
       </motion.div>
@@ -62,12 +63,12 @@ export default function Projects() {
             end-to-end project management—so you can focus on building, not sourcing.
           </p>
           <div className="flex justify-center gap-4 mt-8">
-            <a 
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-6 py-3 rounded-2xl font-semibold bg-white text-[#003366] hover:bg-slate-200 transition"
             >
               Contact Us
-            </a>
+            </Link>
            
           </div>
         </div>

@@ -2,6 +2,7 @@ import Section from '../components/Section'
 import TestimonialCard from '../components/TestimonialCard'
 import { testimonials } from '../data/testimonials'
 import { ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function Testimonials() {
   return (
@@ -25,13 +26,13 @@ export default function Testimonials() {
         <p className="text-lg text-slate-600 mb-6">
           Let’s discuss your equipment needs and how AllTech can help you source the best machinery worldwide.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="inline-flex items-center px-8 py-4 bg-[#003366] text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300"
         >
           Get a Quote
           <ChevronRight className="ml-2 w-5 h-5" />
-        </a>
+        </Link>
       </div>
     </Section>
   )

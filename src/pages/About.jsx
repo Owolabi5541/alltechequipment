@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, Award, Globe, Truck, Settings, CheckCircle, Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -61,22 +62,22 @@ const AboutPage = () => {
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="px-8 py-4 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 flex items-center justify-center group"
           style={{ backgroundColor: '#003366' }}
         >
           Get A Quote Today
           <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-        </a>
+        </Link>
 
-        <a
-          href="/contact"
+        <Link
+          to="/project"
           className="px-8 py-4 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 flex items-center justify-center"
           style={{ backgroundColor: '#6C7A89' }}
         >
           View Our Projects
-        </a>
+        </Link>
       </div>
     </StaticSection>
   </div>
@@ -247,22 +248,22 @@ const AboutPage = () => {
               Let's discuss how we can help you source the perfect equipment for your needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-    href="/contact"
+              <Link
+    to="/contact"
     className="px-8 py-4 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 flex items-center justify-center group"
     style={{ backgroundColor: '#003366' }}
   >
     <Mail className="mr-2 w-5 h-5" /> Contact Us Today
     <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-  </a>
+  </Link>
 
-  <a
-    href="/contact"
+  <Link
+    to="/contact"
     className="px-8 py-4 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 flex items-center justify-center"
     style={{ backgroundColor: '#6C7A89' }}
   >
     <Phone className="mr-2 w-5 h-5" /> Schedule a Call
-  </a>
+  </Link>
             </div>
           </StaticSection>
         </div>
