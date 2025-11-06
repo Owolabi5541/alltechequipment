@@ -180,7 +180,7 @@ const AboutPage = () => {
             </StaticSection>
 
             <StaticSection id="founder-content" className="lg:w-2/3">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#003366' }}>Gail Waller Hunt</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#003366' }}> Sheila Waller Hunt</h3>
               <p className="text-lg leading-relaxed mb-8" style={{ color: '#6C7A89' }}>
                 I am an international broker specializing in heavy machinery and industrial equipment. Since 2016, I have handled projects ranging from $100,000 to over $7 million, sourcing and supplying construction machinery, tractors, generators, transformers, and other large-scale equipment for clients globally. I operate fully on a contract basis, delivering both locally and internationally.
               </p>
